@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    div.create-blog.content
+        form(action="/blogs/" method="POST")
+            label(for="title") Blog title
+            br
+            input(type="text" id="title" name="title" required)
+            br
+            br
+            label(for="snippet") Blog snippet
+            br
+            input(type="text" id="snippet" name="snippet" reuired)
+            br
+            br
+            label(for="body") Blog body
+            br
+            textarea(name="body", id="body" required)
+            br
+            button Submit 
+
+
